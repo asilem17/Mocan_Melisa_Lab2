@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Mocan_Melisa_Lab2.Models;
 
 namespace Mocan_Melisa_Lab2.Data
@@ -17,5 +13,6 @@ namespace Mocan_Melisa_Lab2.Data
         public DbSet<Mocan_Melisa_Lab2.Models.Book> Book { get; set; } = default!;
         public DbSet<Mocan_Melisa_Lab2.Models.Publisher> Publisher { get; set; } = default!;
         public DbSet<Mocan_Melisa_Lab2.Models.Author> Author { get; set; } = default!;
+        public DbSet<Mocan_Melisa_Lab2.Models.Category> Category { get; set; } = default!;
     }
 }
